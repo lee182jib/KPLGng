@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -8,6 +8,7 @@ import { StoryComponent } from './story/story.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { StoriesComponent } from './stories/stories.component';
 import { FooterComponent } from './footer/footer.component';
+import { GameweekComponent } from './gameweek/gameweek.component';
 
 @NgModule({
   declarations: [
@@ -16,10 +17,12 @@ import { FooterComponent } from './footer/footer.component';
     StoryComponent,
     NavbarComponent,
     StoriesComponent,
-    FooterComponent
+    FooterComponent,
+    GameweekComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
